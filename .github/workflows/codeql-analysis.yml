@@ -17,12 +17,12 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ develop ]
-    workflow_dispatch:
-      inputs:
-        test:
-          description: 'test attribute'
-          required: false
-          default: 'not_used'
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'test attribute'
+        required: false
+        default: 'not_used'
 
 jobs:
   analyze:
